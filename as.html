@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+
+    <script>
+
+
+        // var message = "Hello";
+        // var name = "Purno";
+
+        // alert(message + " there, " + name + ".");
+
+
+        // var post = prompt("tweet : ");
+        // var postLength = post.length;
+        // var postTweet = post.slice(0, 140);
+
+        // alert("you have written " + postLength + " you have " + (140 - postLength) + " words character left. \n\n" + postTweet);
+
+        { // string
+            
+            /*
+            var inputName = prompt("Enter your name : ");
+            var sliceName = inputName.slice(0, 1);
+            var imbuhan = inputName.slice(1, inputName.length);
+            var upperCaseName = sliceName.toUpperCase();
+            var lowerCaseName = imbuhan.toLowerCase();
+
+            alert("Hello " + upperCaseName + lowerCaseName + ".");
+
+            */
+        }
+
+        // ===========================================
+
+        {
+            // integer
+
+            // umur anjing
+            // var dogAge = prompt("Enter your dog's age : ");
+            // var humanAge = ((dogAge - 2) * 4) + 21;
+
+            // alert("your age, " + humanAge);
+        }
+
+        { // https://stanford.edu/~cpiech/karel/ide.html
+            /**
+            * Welcome to the Stanford Karel IDE.
+            * This is a free space for you to 
+            * write any Karel program you want.
+            **/
+            function main() {
+                mojok();
+                mojok();
+                kiri();
+                mojok();
+                kanan();
+                mojok();
+                mojok();
+                kiri();
+                mojok();
+                kanan();
+                mojok();
+                mojok();
+            }
+
+            function mojok() {
+                putBeeper();
+                move();
+                move();
+
+            }
+
+            function kiri() {
+                putBeeper();
+                turnLeft();
+                move();
+                turnLeft();
+                move();
+            }
+
+            function kanan() {
+                putBeeper();
+                move();
+                turnRight();
+                move();
+                turnRight();
+            }
+        }
+
+        { // function
+            /*
+            function getMilk(money, costBottles) {
+                console.log("leaveHouse");
+                console.log("moveRight");
+                console.log("moveRight");
+                console.log("moveUp");
+                console.log("moveUp");
+                console.log("moveUp");
+                console.log("moveUp");
+                console.log("moveRight");
+
+                console.log("buy " + calcBottles(money, cossBootles) + " bootles of milk");
+
+                console.log("moveRight");
+                console.log("moveLeft");
+                console.log("moveLeft");
+                console.log("moveDown");
+                console.log("moveDown");
+                console.log("moveDown");
+                console.log("moveDown");
+                console.log("moveLeft");
+                console.log("moveLeft");
+                console.log("enterHouse");
+
+                return calcChange(money, 1.5);
+            }
+
+            function calcBottles(a, b) {
+                var numberCalcBootles = Math.floor(a / b);
+                return numberCalcBootles;
+            }
+
+            function calcChange(a, b) {
+                var numberCalcChange = a % b;
+                return numberCalcChange;
+            }
+
+
+            console.log("Ini kembaliannya " + getMilk(11, 2));
+            */
+        }
+
+        { // BMI calculator
+
+            //Create your function below this line.
+            //The first parameter should be the weight and the second should be the height.
+
+            /*
+            function bmi(weight, height) {
+                var bmi = weight / (height * height);
+                return bmi;
+            }
+
+            function bmiCalculator(weight, height) {
+                var bmi = weight / Math.pow(height, 2);
+                return Math.round(bmi);
+            }
+
+            var bmi = bmiCalculator(65, 1.8); 
+            console.log(bmi);
+            */
+
+            /* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+            
+            
+            bmi should equal 20 when it's rounded to the nearest whole number.
+            
+            */
+            /*
+            function bmiCalculator (weight, height) {
+                var bmi = weight / Math.pow(height, 2);
+                return hasil(bmi);
+            }
+
+            function hasil(bmi) {
+                if (bmi < 18.5) {
+                    interpretation = "Your BMI is " + bmi + ", so you underweight";
+                }
+                else if (bmi > 18.5 && bmi <= 24.9) {
+                    interpretation = "Your BMI is " + bmi + ", so you have a normal weight";
+                }
+                else if (bmi > 24.9) {
+                    interpretation = "Your BMI is " + bmi + ", so you are overweight";
+                }
+                
+                return interpretation;
+            }
+
+            bmiCalculator(70, 1.5);
+            */
+
+        }
+
+        { // random generator
+
+            /*
+            // love generator
+            var name1 = prompt("Me : ");
+            var name2 = prompt("My love : ");
+
+            var love = Math.floor(Math.random() * 100 + 1);
+            
+            if (love > 70){
+                console.log("Your love is " + love +"%" + "Cocok udah kalian");
+            }else if (love > 30 && love <= 70) {
+                console.log("Your love is " + love + "%" + "Mending putus si");
+            }else if (love <= 30){
+                console.log("Your love is " + love + "%" + "Kali udah kalian");
+            }
+            */
+        }
+
+        { // menghitung tahun kabisat
+            
+            /*
+
+            function isLeap(year) {
+                if (year % 4 === 0 || year % 400 === 0) {
+                    if (year % 100 === 0 && year % 400 !== 0) {
+                        console.log("Not Leap year");
+                        return "Not Leap year";
+                    }
+                    else {
+                        console.log("Leap year");
+                        return "Leap year";
+                    }
+                }
+                else {
+                    console.log("Not Leap year");
+                    return "Not Leap year";
+                }
+            }
+
+            isLeap(1998);
+
+            */
+
+        }
+
+        { // array includes (menemukan data didalam array)
+
+            /*
+            var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            var cari = 3;
+
+            if (array.includes(cari))
+            {
+                console.log("Ada didalam array");
+            } 
+            else
+            {
+                console.log("Kosong");
+            } 
+
+            */
+        }
+
+        { // fungsi push (memasukan data pada array)
+
+            /*
+            var i=0;
+            var output = [];
+            function fizzBuzz() 
+            {
+                if (i % 3 === 0 && i % 5 === 0)
+                {
+                    output.push("FiizBuzz");
+                }
+                else if (i % 3 == 0  && i != 0)
+                {
+                    output.push("Fizz!");
+                }
+                else if (i % 5 == 0 && i != 0) 
+                {
+                    output.push("Buzz!");
+
+                }
+                else 
+                {
+                    output.push(i);
+                }
+
+                console.log(output);
+                i++;
+            }
+
+            */
+
+        }
+
+        { // soal
+
+            /*
+            var grup = ["Angela", "Ben", "Jenni", "Michael", "Chloe"];
+
+            function whosPaying(names) {
+    
+                var numberOfPeople = names.length;
+                var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+                var randomPerson = names[randomPersonPosition];
+                
+                return randomPerson + " is going to buy lunch today!";
+            }
+
+            whosPaying(grup);
+
+            */
+        }
+
+        { // 134. while loop
+            /*
+            function beer ()
+            {
+                var i = 10;
+                while (i >=0)
+                {
+                    if (i===0)
+                    {
+                        console.log("No more bootles in the wall");
+                    }
+                    else if (i === 1)
+                    {
+                        console.log(i + " bootle in the wall");
+                    }
+                    else 
+                    {
+                        console.log(i + " bootles in the wall");
+                    }
+                    i--;
+                }
+
+            }
+
+            beer();
+
+            
+            
+            // 135. Solution
+            
+            var numberOfBottles = 30
+            while (numberOfBottles >= 0) {
+                var bottleWord = "bottle";
+                if (numberOfBottles === 1) {
+                    bottleWord = "bottles";
+                } 
+                console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+                console.log(numberOfBottles + " " + bottleWord + " of beer,");
+                console.log("Take one down, pass it around,");
+                numberOfBottles--;
+                console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+            }
+
+            */
+
+        } 
+        
+        
+        
+        {  // 136. for loop
+        }
+
+        { // 137. fibonanci challenge
+
+            function fibonacciGenerator (n) {
+
+                var fibonacciArray = [];
+
+                for (var i = 0; i <= n-1; i++)
+                {
+                    // var p = i;
+                    // fibonacciArray.push(p);
+                    
+                    if(fibonacciArray[1] === 1)
+                    {
+                        var sum = fibonacciArray[i-2] + fibonacciArray[i-1];
+                        fibonacciArray.push(sum);
+                    }
+                    else
+                    {
+                        var sum = i;
+                        fibonacciArray.push(sum);
+                    }
+                    
+                }
+
+                return fibonacciArray;
+                
+            }
+            
+            
+            var output = fibonacciGenerator(1);
+            console.log(output);
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
